@@ -1,0 +1,87 @@
+nav {
+    padding: 0px;
+    background-color: cadetblue;
+}
+
+.container {
+    width: 80%;
+    margin:auto;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0px 0px;
+    overflow: hidden;
+}
+
+ol li {
+    float: right;
+}
+
+ol li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+}
+
+a#navlogo {
+    padding: 10px 50px 10px 50px;
+    background-color:mediumaquamarine;
+}
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1762503203754-62c5a0c969d9?q=80&w=2692&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+    background-repeat: no-repeat;
+    background-color: bisque;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    padding-top: 140px;
+    text-align: center;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+section {
+    font-size: small;
+    text-align: center;
+}
+
+figcaption {
+    padding-top: 20px;
+    font-style: italic;
+}
+
+.productheader {
+    margin:auto;
+    padding: 0px;
+    float:center;
+}
+
+.productheader > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products {
+    padding-top: 20px;
+}
+
+.products > article {
+    padding: 10px 10px;
+}
+
+article {
+    padding: 10px 10px;
+    background-color:azure;
+    width: 220px;
+    float:left;
+    display: inline;
+}
+
+.map {
+    float: right;
+    padding: 0px;
+}
