@@ -3,50 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Yrityksen verkkosivusto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Exile&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sivustontyyli.css">
+
+<style>
+    .image-container {
+        width: 200px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
 </head>
 
 <body>
 <div class="container">
 
     <nav>
-        <ol>
+        <ul>
         <li style="float: left;"><a id="navlogo">Site logo</a></li>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
-        </ol>
+        <li><a class="active" href="products.html">Products</a></li>
+        <li><a href="index.html">Home</a></li>
+        </ul>
     </nav>
 
-    <container>
+  
     <div class="productheader">
-        <img src="https://placehold.co/800x200" alt="Flowers in a field">
-        <figcaption>Lorem ipsum.</figcaption>
+        <img src="https://images.unsplash.com/photo-1785678519911-bb12f395fa45?q=80&w=2235&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Product page header picture">
+        <figcaption>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget elit et quam iaculis hendrerit in ac diam. Proin venenatis erat id tortor malesuada mollis et sit amet massa. Aliquam vestibulum massa enim, non blandit ipsum fringilla eget. Sed suscipit justo ac odio pulvinar dictum. Suspendisse cursus pretium volutpat. Nulla commodo neque sagittis sapien malesuada facilisis. Suspendisse ac mauris dapibus urna rhoncus egestas vel id lorem.</figcaption>
     </div>
 
     <div class="products">
         <article>
+            <div class="productlisting">
             <h3>Product 1</h3>
-            <img scr="https://placehold.co/200x300" alt="Product 1">
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1782241594334-42fcca7cd3e0?q=80&w=1037&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Product picture 1">
+            </div>
             <figcaption>Product 1</figcaption>
-            <p>Lorem impsum</p>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam et neque eget eros convallis rutrum eu vitae neque. Suspendisse sodales lorem a maximus egestas. Maecenas pharetra aliquam bibendum. Donec eleifend venenatis elit eget porta. Aenean congue eleifend turpis. Fusce et bibendum magna. Praesent commodo sem ac est porta, egestas tempus libero cursus. Donec non molestie quam. Nunc commodo eget nunc ut scelerisque.</p>
+            </div>
         </article>
 
         <article>
+            <div class="productlisting">
             <h3>Product 2</h3>
-            <img scr="https://placehold.co/200x300" alt="Product 1">
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1782241594366-a6cb0b3edc47?q=80&w=1037&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Product picture 2">
+            </div>
             <figcaption>Product 2</figcaption>
-            <p>Lorem impsum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sodales pellentesque bibendum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque sollicitudin lacus diam, nec tincidunt magna bibendum sit amet. Nulla facilisi. Vestibulum bibendum iaculis nisl, vitae ornare sapien.</p>
+            </div>
         </article>
 
         <article>
+            <div class="productlisting">
             <h3>Product 3</h3>
-            <img scr="https://placehold.co/200x300" alt="Product 1">
+            <div class="image-container">
+                <img src="https://images.unsplash.com/photo-1782241594342-0b65a717ee93?q=80&w=1037&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Product picture 3">
+            </div>
             <figcaption>Product 3</figcaption>
-            <p>Lorem impsum</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in rhoncus ante. Nunc hendrerit pretium ornare. Donec vehicula ligula ut sapien sollicitudin hendrerit. Vivamus faucibus diam lacus, ac molestie sapien fermentum iaculis. Curabitur vitae ligula malesuada, iaculis libero convallis, interdum nibh.</p>
+            </div>
         </article>
 
-        </container>
     </div>
 </div>
 </body>

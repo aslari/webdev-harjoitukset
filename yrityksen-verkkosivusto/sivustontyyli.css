@@ -1,6 +1,37 @@
+.exile-regular {
+  font-family: "Exile", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.libre-caslon-display-regular {
+  font-family: "Libre Caslon Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.brygada-1918 {
+  font-family: "Brygada 1918", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.workbench {
+  font-family: "Workbench", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "BLED" 6,
+    "SCAN" 4;
+}
+
+
+
 nav {
     padding: 0px;
-    background-color: cadetblue;
+    background-color: #F2D2B6;
 }
 
 .container {
@@ -8,39 +39,49 @@ nav {
     margin:auto;
 }
 
-ol {
+ul {
     list-style-type: none;
     padding: 0px 0px;
     overflow: hidden;
 }
 
-ol li {
+ul li {
     float: right;
 }
 
-ol li a {
+ul li a {
     display: block;
     text-decoration: none;
-    padding: 10px 10px 10px 10px;
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+}
+
+ul li a:hover:not(.active) {
+    background-color: #F2CA80;
+    transition: 0.5s ease;
+}
+
+ul li a.active {
+    background: #F2B9AC;
 }
 
 a#navlogo {
-    padding: 10px 50px 10px 50px;
-    background-color:mediumaquamarine;
+    padding: 20px 50px 20px 50px;
+    background-color:#F2B9AC;
+}
+
+
+
+
+header {
+    padding-top: 0px;
 }
 
 body {
     background-image: url("https://images.unsplash.com/photo-1762503203754-62c5a0c969d9?q=80&w=2692&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
     background-repeat: no-repeat;
-    background-color: bisque;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-header {
-    padding-top: 140px;
-    text-align: center;
-    font-family: monospace;
-    font-size: x-large;
+    background-color: rgba(255, 228, 196, 0.427);
+    font-family: "Libre Caslon Display";
 }
 
 section {
@@ -48,37 +89,107 @@ section {
     text-align: center;
 }
 
+article {
+    margin: auto;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 240px;
+    height: 480px;
+    float:left;
+    display: inline;
+}
+
+.productlisting {
+    margin: auto;
+    height: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    background-color:#ffefe392;
+    box-shadow: 4px 4px 2px #55253249;
+    overflow: auto;
+}
+
+.productlisting > p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.productlisting > img {
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 0px;
+}
+
+.productlisting > figcaption {
+    padding-top: 0px;
+}
+
+
+
+h1 {
+    padding-top: 80px;
+    font-family: "Workbench";
+    text-align: center;
+    font-size:72px;
+    color: #B6506B;
+    text-shadow: 4px 4px 1px #49070739;
+    width: auto;
+}
+
+h2 {
+    text-align: left;
+    font-size: xx-large;
+    color: #853B4F;
+    font-family:"Brygada 1918";
+    text-shadow: 2px 2px 2px #490707;
+}
+
+h3 {
+    font-style: italic;
+    font-size: medium;
+}
+
 figcaption {
     padding-top: 20px;
+    font-size: small;
     font-style: italic;
+    color: #B6506B;
+    font-family: "Brygada 1918";
+    text-align: justify;
 }
+
+p {
+    color: #853B4F;
+    font-size: medium;
+}
+
+a {
+    color: #552532;
+}
+
 
 .productheader {
     margin:auto;
     padding: 0px;
-    float:center;
+}
+
+.productheader:hover {
+    opacity: 80%;
+    transition: 1s ease;
 }
 
 .productheader > img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 .products {
     padding-top: 20px;
-}
-
-.products > article {
-    padding: 10px 10px;
-}
-
-article {
-    padding: 10px 10px;
-    background-color:azure;
-    width: 220px;
-    float:left;
-    display: inline;
 }
 
 .map {

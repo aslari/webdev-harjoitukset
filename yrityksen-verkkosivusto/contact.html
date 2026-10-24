@@ -3,36 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Yrityksen verkkosivusto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&family=Exile&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="sivustontyyli.css">
+
+<style>
+    article {
+    padding: 10px 20px;
+    background-color:#F2D2B6;
+    width: 320px;
+    float:left;
+    display: inline;
+}
+</style>
+
 </head>
 
+
+
 <body>
-
-    <nav>
-
-        <ol>
-        <li style="float: left;"><a id="navlogo">Site logo</a></li>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        </ol>
-
-    </nav>
 <div class="container">
-    <header><h1>Contact us</h1></header>
+    <nav>
+    <ul>
+        <li style="float: left;"><a id="navlogo">Site logo</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+    </nav>
 
+    <h2>Contact us</h2>
     <div class="contactinfo">
-        <aside>
-       <p>Visit us at:</p>
-       <p>CompanyX</br>
-        Karaportti 2</br>
-        02340 ESPOO</br>
-        Email: info@metropolia.fi</br>
-        Phone: +358 40 123 456</p>
-    </div></aside>
-    <div class="map">
-        <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed?bbox=24.754632711410526%2C60.220058331116626%2C24.758344888687137%2C60.22411321534856&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=17/60.222086/24.756489">View Larger Map</a></small>
+        <article>
+            <h3><p>Visit us at:</p>
+            <p>CompanyX<br>
+            Karaportti 2<br>
+            02340 ESPOO<br>
+            Email: info@metropolia.fi<br>
+            Phone: +358 40 123 456</p></h3>
+        </article>
     </div>
+
+    <div class="map">
+        <aside>
+        <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed?bbox=24.754632711410526%2C60.220058331116626%2C24.758344888687137%2C60.22411321534856&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=17/60.222086/24.756489">View Larger Map</a></small>
+        </aside>
+    </div>
+
 </div>
 </body>
 </html>
