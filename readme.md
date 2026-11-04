@@ -26,3 +26,5 @@ Tehdyt tehtävät:
 [Linkki JS-moduulin 3 kansiooni users.metropolia.fi-palvelussa](https://users.metropolia.fi/~aslari/webdev-teht/javascript_3)
 
 Tehdyt tehtävät:
+- 
+**yhteensä p**

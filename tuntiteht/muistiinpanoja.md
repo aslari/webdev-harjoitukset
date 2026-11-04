@@ -1,3 +1,7 @@
+### script defer
+- käynnistää javascriptin vasta, kun DOM on rakennettu
+
+
 ### JS-datatyypit
 - bigint: suuret kokonaisluvut
 - null: ei arvoa (vielä), käytetään tarkoituksellisesti kertomaan, että arvoa ei ole
@@ -8,6 +12,8 @@
 - typeof muuttujan nimi: kertoo datatyypin, numerot ovat string
   - parseInt(muutujaInput.value); -> parse muuttaa numeroksi
 - console.log(``Tulostetaan: ${muuttuja}`)
+
+
 
 ### Ohjausrakenteet
 - if toimii kuten pythonissa, eri syntaksi
@@ -54,6 +60,8 @@ console.log("Painon oltava yli 0kg")
 }``
     -   i = kierrosmuuttuja, i++ tarkoittaa lisätään arvoa yksi
 
+
+
 ### Taulukot (array)
 
 - ``sort()`` lajittelee taulukon alkiot aakkosjärjestykseen
@@ -67,6 +75,8 @@ console.log("Painon oltava yli 0kg")
 
 - suuruusjärjestys: nimi.sort((a, b) => a - b))
 
+
+
 ### olioliteraalit (object literal)
 - kuin sanakirja pythonissa
 - nimi-arvo -pareja, nimet olion ominaisuuksia (property)
@@ -76,6 +86,7 @@ console.log("Painon oltava yli 0kg")
   - olion muuttaminen (mutating)
 - ominaisuuden arvo voi olla funktio 
   - kutsutaan metodiksi
+
 
 ### funktio (function)
 - ``function``-lauseella kirjoitetut funktiot
@@ -91,6 +102,7 @@ console.log("Painon oltava yli 0kg")
 - funktiota kutsutaan ``funktionimi();``
 - parametrillinen funktio
 
+
 ### muuttujien näkyvyys
 - näkyvyysalue (scope), eli missä ohjelman osissa muuttujaa voi käyttää
 - lohko = aaltosulkeiden sisällä
@@ -100,9 +112,11 @@ console.log("Painon oltava yli 0kg")
   -  const = lohkon paikallinen muuttuja
 - ``const``= globaali muuttuja
 
+
 ### taulukko parametrina
 - välitetään viittaus (reference) taulukkoon "kopiona"
 - taulukon voi palauttaa paluuarvona viittauksena
+
 
 ### nuolifunktiot (lambdafunktio)
 - funktion kompaktimpi muoto
@@ -110,3 +124,40 @@ console.log("Painon oltava yli 0kg")
 - paremetri => , lausekkeen arvo/funktion paluuarvo
 - jos nuolifunktio suorittaa usean lauseen, funktion runko lohkona aaltosulkeiden sisällä
   - täytyy palauttaa ``return``-lauseella
+
+
+### BOM (browser object model)
+- selaimen tarjoama käyttöliittymä
+  - olioita, jotka selain tarjoa javascriptin käyttöön
+- ei standardisoitu, eroavat selainten välillä
+- olion hierarkianjuuressa Window-olio
+- ``console.dir(window)``
+- **BOM-metodeilla** voidaan mm. luoda dialogeja, aloittaa ja lopettaa ajastimia
+- alert ja prompt ovat BOM-metodeja
+  - ``window.alert()`` ja ``window.prompt()``, mutta juurioliota window ei tarvitse kirjoittaa
+- document-olio käyttöliittymänä selaimeen ladattuun nettisivuun
+- sisältää DOM-puun
+- tarjoaa metodeja, joita voidaan käsitellä javascriptin avulla
+
+
+### DOM (document object model)
+- olioesitys, jonka selain rakentaa nettisivusta
+  - esittää sivun elementit BOM:in kautta, jotta niitä voidaan käsitellä
+- DOM-puurakenne
+  - **node** = elementtejä, attribuutteja ja sisältöä
+  - **parent node** = noden yläpuolella
+  - **child node** = noden alapuolella
+  - **sibling node** = child node, jolla sama vanhempi
+- elementtien valitseminen
+  - DOM tarjoaa metodeja, joilla voi hakea elementtejä
+- elementtien muokkaaminen
+  - elementeillä on **innerText**-ominaisuus, joka sisältää elementin sisältönä olvean tekstin
+  - voi muokata JS:llä
+  - elementeillä **on innerHTML** -ominaisuus
+
+
+### Events ja event handlers
+- tapahtumat ja käyttäjän interaktio sivun kanssa
+- funktioita, jotka ajetaan, kun jokin event tapahtuu
+- JS:n event on Pythonin exceptionin kaltainen, luo olion
+- miksi tapahtumankäsittelijä (event handler) on takaisinkutsufunktio (callback function) -> funktio käydään läpi, ennen kuin se kutsutaan
