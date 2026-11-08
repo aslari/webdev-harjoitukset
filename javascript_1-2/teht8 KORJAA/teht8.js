@@ -14,7 +14,7 @@ function karkausvuosilasku() {
             karkausvuodet.push(i);
         } else if (i %4 === 0 && i % 100 === 0 && i % 400 === 0) {
             karkausvuodet.push(i);
-        } else if (vuosiInt % 4 === 0 && vuosiInt % 100 === 0 && vuosiInt % 400 !== 0) {
+        } else if (i % 4 === 0 && i % 100 === 0 && i % 400 !== 0) {
             return;
         } else {
             return;
@@ -23,8 +23,14 @@ function karkausvuosilasku() {
 }
 
 karkausvuosilasku();
-console.log(karkausvuodet);
 
-document.querySelector("#vuosi").innerHTML = vuosiInt;
+for (let i = 0; i <= karkausvuodet.length; i++) {
+    console.log(karkausvuodet);
+}
 
-
+const ul = document.getElementsByTagName('ul')[0];
+const vuosilisays = document.createElement('li');
+for (let i=0; i<=karkausvuodet.length; i++) {
+    vuosilisays.innerText = karkausvuodet[0];
+    ul.appendChild(vuosilisays);
+}

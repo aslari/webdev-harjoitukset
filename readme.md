@@ -16,8 +16,9 @@ Tehdyt tehtävät:
 - teht 4: 3 p
 - teht 5: 3p
 - teht 6: 3p
+- teht 7: 2p
 
-**Yhteensä 16 p**
+**Yhteensä 18 p**
 
 ---
 
@@ -26,5 +27,11 @@ Tehdyt tehtävät:
 [Linkki JS-moduulin 3 kansiooni users.metropolia.fi-palvelussa](https://users.metropolia.fi/~aslari/webdev-teht/javascript_3)
 
 Tehdyt tehtävät:
-- 
-**yhteensä p**
+- teht 1: 2p
+- teht 2: 2p
+- teht 3: 2p
+- teht 4: 2p
+- teht 5: 2p
+- teht 6: 2p
+
+**yhteensä 12p**
