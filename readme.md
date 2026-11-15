@@ -38,7 +38,7 @@ Tehdyt tehtävät:
 
 ### JS-moduuli 4
 
-[linkki](https://users.metropolia.fi)
+[linkki neloskansioon](https://users.metropolia.fi/~aslari/webdev-teht/javascript_4/)
 
 tehdyt tehtävät:
 - teht 1: 2p done
