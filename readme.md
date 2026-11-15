@@ -35,3 +35,22 @@ Tehdyt tehtävät:
 - teht 6: 2p
 
 **yhteensä 12p**
+
+### JS-moduuli 4
+
+[linkki](https://users.metropolia.fi)
+
+tehdyt tehtävät:
+- teht 1: 2p done
+- teht 2: 2p done
+- teht 3: 2p done
+- teht 4: 2p done
+- teht 5: 5p done
+- teht 6: 1p done
+- teht 7: 2p
+- teht 8: 4p
+- teht 9: 4p
+- teht 10: 2p
+- teht 11: 6p
+
+**yht 14p**
